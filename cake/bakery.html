@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+        <title>Bakery Product</title>
+        <link rel="stylesheet" href="bakery.css">   
+        <script src="bakery.js"></script> 
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css" integrity="sha512-d0olNN35C6VLiulAobxYHZiXJmq+vl+BGIgAxQtD5+kqudro/xNMvv2yIHAciGHpExsIbKX3iLg+0B6d0k4+ZA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+  <body>
+    <!-- Navigation bar -->
+    <nav class="header">
+    <div class="App1">
+        <div class='icon_nav'>
+   <div class='icon_div'>
+  <ul class='icon_ul'>
+    <li class='icon'><i class="fa-brands fa-instagram"></i></li>
+    <li class='icon'><i class="fa-brands fa-facebook-f"></i></li>
+    <li class='icon'><i class="fa-brands fa-twitter"></i></li>
+    <li class='icon'><i class="fa-brands fa-square-youtube"></i></li>
+  </ul>
+
+</div>
+
+<div id='menu'><button onclick="show_list()"><i class="fa-solid fa-bars"></i></button>
+<div class='menu_list' id='none'>
+  <ul>
+  <li class='pink_home' onclick="go_to_home()">Home</li>
+    <li>Collection</li>
+    <li>Catalog</li>
+    <li>Sale</li>
+    <li>Blog</li>
+    <li>Contacts</li>
+  </ul>
+</div>
+</div>
+
+
+<div class='nav_div' id='navigation'>
+ 
+<ul class='nav_ul'>
+<li class='nav active'><a href="#">Home</a></li>
+<li class='nav'><a href="#">Collection</a></li>
+<li class='nav dropdown'><a href="#">Catalog</a></li>
+<li class='nav'><a href="#">Sale</a></li>
+<li class='nav'><a href="#">Blog</a></li>
+<li class='nav'><a href="#">Contacts</a></li>
+</ul>
+</div>
+
+</div>
+
+<div class='bakelei'>
+  <p class='bake'>BAKE<span class='lei'>LEI</span></p>
+</div>
+
+<div class='input_div'>
+  <div class='call'>
+    <p>ORDER ONLINE OR CALL US <a href="#">(123) 456-7890</a></p>
+  </div>
+
+  <div class='input_icon'>
+    <div class='input_icon1'>
+      <input type="text" />
+      <span class='search'><i class="fa-solid fa-magnifying-glass"></i></span>
+      </div>
+
+      <div class='input_icon1'>
+      <ul>
+        <li class='icon1'><i class="fa-solid fa-cart-shopping"></i><sup id='count'>0</sup></li>
+        <li class='icon1'><i class="fa-solid fa-scale-balanced"></i><sup>0</sup></li>
+        <li class='icon1 no'><i class="fa-solid fa-user"></i></li>
+      </ul>
+      </div>
+  </div>
+</div>
+</div>
+</nav>
+
+<section id='home'>
+      <div class='rela'>
+       <div class='home_div_img'>
+        <div class='home_div_content'>
+        <p class='enjoy'>Enjoy our<br/>tasty array of<br/>
+          <span><em>bakery<br/>products!</em></span>
+        </p>
+        
+        <p class='here'>Here you will find your favorite bread, cookies, cakes, pastries, and pies.</p>
+
+        <div class='btn_div'><button onclick="go_to_bakery()">SHOP NOW</button></div>
+      </div>
+      </div>
+      </div>
+  </section>
+
+  <!-- Best Seller -->
+<section>
+<div id='best_seller'>
+  <div class='instagram_div'>
+  <div class='best_seller_class'>
+    <h1 class='best'>Best Seller</h1>
+    <p class='best_para'>Best Seller Product This Week!</p>
+ 
+
+  <div class='cake_div'>
+    <div class='cake_div_cont' id='turtle' onclick="go_to_turtle_cake()">
+    <div class='right1'></div>
+      <img  class='img1 img_height' src="images/products-img15.jpg" alt=""  />
+      <div><p>Turtle Cake</p></div>
+    </div>
+
+    <div class='cake_div_cont' id='honey' onclick="go_to_honey_cake()">
+      <div>
+        <div class='right1'><button>Top</button></div>
+        <img class='img1' src="images/products-img16.jpg" alt="" />
+      </div>
+      <div><p>Honey Cake</p></div>
+    </div>
+
+    <div class='cake_div_cont' id='chocolate'  onclick="go_to_chocolate_cake()">
+    <div class='right1'></div>
+      <img class='img1 img_height' src="images/products-img25.jpg" alt="" />
+      <div><p>Chocolate Cake</p></div>
+    </div>
+
+    <div class='cake_div_cont' id='nute_cup_cake' onclick="go_to_nute_cup_cake()"> 
+      <div>
+        <div class='right1'><button>Top</button></div>
+        <img class='img1' src="images/products-img26.jpg" alt="" />
+      </div>
+      <div><p>Honey Cake</p></div>
+    </div>
+</div>
+
+  </div>
+  </div>  
+
+<div class='three_cake_div'>
+    <div class='three_cake_img_cont'><img class='img1' src="images/pasty1.jpg" alt="" /></div>
+
+      <div class='three_cake_img_cont rela'>
+        <img class='img1 our'  src="images/home-img2.jpg" alt="" />
+        <div class='absolute'>
+          <p>Visit</p>
+          <p>Our Store</p>
+        </div>
+      </div>
+
+      <div class='three_cake_img_cont'><img class='img1'  src="images/home-img3.jpg" alt="" /></div>
+
+  </div>
+
+<div class='instagram_div'>
+  <div class='best_seller'>
+    <h1 class='best'>Hot Deal Of Day</h1>
+    <p class='best_para'>Don't Miss Today's Featured Deals</p>
+    </div>
+</div> 
+
+  <div class="instagram_div">
+     <div id="root1" class="root2"></div>
+    </div>
+
+     <h1 id="cartitem"></h1>
+
+     <div class="total_div"><h1 id="total"></h1></div>
+
+ <script>
+  const product = [
+      {
+          id:0,
+          image:"images/products-img11.jpg",
+          title:"Carrot Cake",
+          price:17,
+          face_prise:"$30.99",
+          less_per:-30
+      },
+      {
+          id:1,
+          image:"images/products-img24.jpg",
+          title:"Sponge Cake",
+          price:24,
+          face_prise:"$30.99",
+          less_per:-40
+      },
+      {
+          id:2,
+          image:"images/products-img13.jpg",
+          title:"Cupcake Chocolate",
+          price:14,
+          face_prise:"$23.99",
+          less_per:-20
+      },
+      {
+        id:3,
+        image:"images/products-img12.jpg",
+        title:"Basic Sponge Chocolate",
+        price:24,
+        face_prise:"$30.99",
+        less_per:-40
+    },
+  ];
+  
+  const categories = [...new Set(product.map((item) => {
+      return item;
+  }))]
+  let i = 0;
+  document.getElementById("root1").innerHTML = categories.map((item) => {
+      var {image, title, price,face_prise,less_per} = item;
+      return(
+          `
+          <div class='cake_div_cont' >
+        
+          <div class='img-box'>
+            <div class='right'><button>${less_per}</button></div>
+          <img class='img1 img_height'' src=${image}></img>
+          </div>
+          <div class='cont'>
+          <p><a href="#">${title}</a><p/>
+          <h2 class="rs"><i>$ ${price}</i> <del> ${face_prise}</del></h2>
+          ` +
+          "<button onclick='addtocart("+(i++)+")'> <i class='fa-solid fa-cart-shopping' style='margin-right: 7px;'></i>ADD TO CART</button>" +
+          // "<button onclick='addtocart("+(i++)+")'>Add to Cart</button>" +
+          `
+      
+          </div>
+          </div>
+          `
+          
+      )
+  })
+  
+  .join('');
+  
+  
+  var cart = [];
+  
+  function addtocart(a){
+      cart.push({...categories[a]});
+      displaycart();
+  }
+  
+  function delElement(a){
+      cart.splice(a, 1);
+      displaycart();
+  }
+  
+  function displaycart(){
+      let j = 0, total=0;
+      document.getElementById("count").innerHTML = cart.length;
+      if(cart.length == 0){
+          document.getElementById("cartitem").innerHTML = "Your Cart is empty";
+          document.getElementById("total").innerHTML = "Total: " +0+ " .00";
+          
+      }
+      else{
+          document.getElementById("cartitem").innerHTML = cart.map((items) => {
+              var{image, title, price} = items;
+              total=total+price;
+              document.getElementById("total").innerHTML = "Total: " +total+" .00";
+              return(
+                  `
+                  <div class='cart_item'>
+                      <div class='row_img'>
+                          <img class='rowimg' src=${image}>
+                          </div>
+                          <h5>${title}</h5>
+                          <p>$ ${price}.00</p>`+
+                          "<i class='fa-solid fa-trash delete' onclick='delElement(" +(j++)+ ")'></i></div>"
+                      
+              )
+          }).join('');
+      }
+  }
+   </script>
+
+  </div>
+  </div>  
+
+  <!-- New Arrivals  -->
+<div class='img_div'>
+  <div class='img_div_cont'>
+    <h1 class='new'>New Arrivals</h1>
+    </div>
+    <div class='multiple_img_div'>
+      <div class='multiple_img_div_con'>
+
+      <div class='multiple_img' onclick="close_img()">
+        <img class='image1 img1' src="images/pasty1.jpg"  />
+        <div class='center'>
+          <div class='icon_instra'><i class="fas fa-search-plus"></i></div>
+        </div>
+      </div>
+
+      <div class='multiple_img' onclick="close_img()">
+        <img class='image1 img1' src="images/gallery-img1.jpg"  />
+        <div class='center'>
+          <div class='icon_instra'><i class="fas fa-search-plus"></i></div>
+        </div>
+        </div>
+        </div>
+
+<div class='multiple_img_div_con'>
+      <div class='multiple_img' onclick="close_img()">
+        <img class='image1 img1' src="images/gallery-img2.jpg"  />
+        <div class='center'>
+          <div class='icon_instra'><i class="fas fa-search-plus"></i></div>
+        </div>
+        </div>
+
+        <div class='multiple_img' onclick="close_img()">
+        <img class='image1 img1' src="images/gallery-img3.jpg"  />
+        <div class='center'>
+          <div class='icon_instra'><i class="fas fa-search-plus"></i></div>
+        </div>
+        </div>
+        </div>
+
+<div class='multiple_img_div_con'>
+        <div class='multiple_img' onclick="close_img()">
+        <img class='image1 img1' src="images/home-img3.jpg"  />
+        <div class='center'>
+          <div class='icon_instra'><i class="fas fa-search-plus"></i></div>
+        </div>
+        </div>
+
+        <div class='multiple_img' onclick="close_img()">
+        <img class='image1 img1' src="images/gallery-img4.jpg"  />
+        <div class='center'>
+          <div class='icon_instra'><i class="fas fa-search-plus"></i></div>
+        </div>
+        </div>
+     </div>   
+     </div>
+
+
+    <div class='collec_bakery_div'>
+      <div class='order_here_div'>
+        <div class='order_here_div_cont'>
+          <img src="images/cake.png" alt="" />
+          <h1>Wedding Catering</h1>
+          <p>Our experienced team can help you through every stage of event it through to arranging.</p>
+          <button onclick="Show_bakery()">ORDER NOW</button>
+        </div>
+        <div class='order_here_div_cont'>
+          <img src="images/ice-crem.png" alt="" />
+          <h1>Birthday Package</h1>
+          <p>Whether you are holding a small family occasion or your catering for a large number of people.</p>
+          <button onclick="Show_bakery()">ORDER NOW</button>
+        </div>
+        <div class='order_here_div_cont'>
+          <img src="images/pasty.png" alt="" />
+          <h1>Office Celebration</h1>
+          <p>No matter what size, scale or  location for your event, our specialist team will ensure a  seamless.</p>
+          <button onclick="Show_bakery()">ORDER NOW</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Our Blog -->
+  <div class='img_div_cont'>
+    <h1 class='new'>Our Blog</h1>
+    </div>
+      <div class='two_img_cont_div'>
+    <div class='two_img_cont padding2'><img class='img1' src="images/blog-img4.jpg" alt="" /></div>
+    <div class='two_img_cont padding1'>
+      <h1><a  class='salt' href="#">Salted Caramel Pear Cake</a></h1>
+      <p>22.10.2021</p>
+      <p>The ability to manage money competently is especially valuable quality in the conditions of financial crisis, when the purchasing power of the population is shrinking, inflation is rising, and currency exchange rates are completely unpredictable.      </p>
+
+        <p><button onclick="go_to_blog()">READ MORE</button></p>
+    </div>
+    </div>
+
+    <div class='two_img_cont_div'>
+    <div class='two_img_cont padding1'>
+      <h1><a  class='salt' href="#">Baileys Pumpkin Spice Cupcakes</a></h1>
+      <p>22.10.2021</p>
+      <p>Search of staff is not an easy task. According to the departmental heads' of personnel management words, in order to find a personnel who will correspond to the relevant customer needs and requirements, it is necessary to carry out a great job.</p>
+        <p><a href="file:///D:/krishna/cake/pumpkin.html"><button onclick="Show_pumpkin()">READ MORE</button></a></p>
+    </div>
+    <div class='two_img_cont padding2'><img class='img1' src="images/blog-img5.jpg" alt="" /></div>
+
+    </div>
+
+    <div class='instagram_div1'>
+    <div class='instagram'>
+      <img src="images/instagram.png"  />
+      <h1 class='h1_instra'><em>Instagram Shop</em></h1>
+    </div>
+
+    <div class='foot_img_div'>
+      <div class='foot_img1'>
+        <img class='image' src="images/footer-img1.jpg"  />
+        <div class='center'>
+          <div class='icon_instra'><i class="fa-brands fa-instagram"></i></div>
+        </div>
+      </div>
+
+      <div class='foot_img1'>
+        <img class='image' src="images/footer-img2.jpg" />
+        <div class='center'>
+          <div class='icon_instra'><i class="fa-brands fa-instagram"></i></div>
+        </div>
+        </div>
+
+      <div class='foot_img1'>
+        <img class='image' src="images/footer-img3.jpg"  />
+        <div class='center'>
+          <div class='icon_instra'><i class="fa-brands fa-instagram"></i></div>
+        </div>
+        </div>
+
+      <div class='foot_img1'>
+        <img class='image' src="images/footer-img4.jpg"  />
+        <div class='center'>
+          <div class='icon_instra'><i class="fa-brands fa-instagram"></i></div>
+        </div>
+        </div>
+
+    </div>
+  
+
+<footer>
+<div class='foot_div'>
+  <div class='foot_div_cont'>
+    <p><em>Receive news right on your email</em></p>
+    <p class='input_text'><input class='email' type="email"  placeholder="Enter your e-mail here*" required/></p>
+    <button>SUBSCRIBE</button>
+  </div>
+
+  <div class='foot_div_cont'>
+  <p class='bake1'>BAKE<span class='lei'>LEI</span></p>
+  <ul>
+    <li class='li'><a href=""><span><i class="fa-brands fa-instagram"></i></span></a></li>
+    <li class='li'><a href=""><span><i class="fa-brands fa-facebook-f"></i></span></a></li>
+    <li class='li'><a href=""><span><i class="fa-brands fa-twitter"></i></span></a></li>
+    <li class='li'><a href=""><span><i class="fa-brands fa-square-youtube"></i></span></a></li>
+  </ul>
+  </div>
+
+  <div class='foot_div_cont'>
+    <p><em>Contacts</em></p>
+    <div class='side'>
+    <div class='loca_call'><i class="fa-solid fa-location-dot"></i></div>
+    <div><p class='loc'>707 Randolph Street <br/>
+      Napa, CA 94559</p></div>
+    </div>
+
+  <div class='side'>
+    <div class='loca_call'><i class="fas fa-phone"></i></i></div>
+    <div>
+      <p class='loc'>P: 123.456.7890</p>
+      <p class='loc'>F: 123.456.7891</p>
+
+    </div>
+    </div>
+ 
+</div>
+</div>
+
+<div class='last'><p>Copyright © 2021. All Rights Reserved.</p></div>
+</div>
+    </div>
+    </div>
+</section>
+
+</footer>
+
+
+ <!-- Multiple img Show  -->
+ <!-- <div   id='close_div' >
+<div class='black_div'>
+
+   <div class='black_div_show_img' >
+  <div class='close'><button  onclick="close_img()"><i class="fas fa-times"></i></button></div>
+   
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 6</div>
+        <img class='img2' src="images/pasty1.jpg" alt="" style="width: 100%;" />
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 6</div>
+        <img class='img2' src="images/gallery-img1.jpg" alt="" style="width: 100%;" />
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 6</div>
+        <img class='img2' src="images/gallery-img2.jpg" alt="" style="width: 100%;" />
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 6</div>
+        <img class='img2' src="images/gallery-img3.jpg" alt="" style="width: 100%;" />
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 6</div>
+        <img class='img2' src="images/home-img3.jpg" alt="" style="width: 100%;" />
+      </div>
+      
+
+      <div class="mySlides fade">
+        <div class="numbertext">6 / 6</div>
+        <img class='img2' src="images/gallery-img4.jpg" alt=""  style="width: 100%;"/>
+      </div>
+      
+      
+  </div>
+</div>
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+</div> -->
+
+
+ </div>
+ 
+ <script src="bakery.js"></script>
+
+</body>
+</html>
+

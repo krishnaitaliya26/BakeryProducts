@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bakery.css">
+    <script src="bakery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/fontawesome.min.js" integrity="sha512-C8qHv0HOaf4yoA7ISuuCTrsPX8qjolYTZyoFRKNA9dFKnxgzIHnYTOJhXQIt6zwpIFzCrRzUBuVgtC4e5K1nhA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+</head>
+<body>
+    <nav class="header">
+        <div class="App1">
+            <div class='icon_nav'>
+       <div class='icon_div'>
+      <ul class='icon_ul'>
+        <li class='icon'><i class="fa-brands fa-instagram"></i></li>
+        <li class='icon'><i class="fa-brands fa-facebook-f"></i></li>
+        <li class='icon'><i class="fa-brands fa-twitter"></i></li>
+        <li class='icon'><i class="fa-brands fa-square-youtube"></i></li>
+      </ul>
+    
+    </div>
+    
+    <div id='menu'><button onclick="show_list()"><i class="fa-solid fa-bars"></i></button>
+    <div class='menu_list' id='none'>
+      <ul>
+        <li class='pink_home' onclick="go_to_home()">Home</li>
+        <li>Collection</li>
+        <li>Catalog</li>
+        <li>Sale</li>
+        <li>Blog</li>
+        <li>Contacts</li>
+      </ul>
+    </div>
+    </div>
+    
+    
+    <div class='nav_div' id='navigation'>
+     
+    <ul class='nav_ul'>
+    <li class='nav active'><a href="#">Home</a></li>
+    <li class='nav'><a href="#">Collection</a></li>
+    <li class='nav dropdown'><a href="#">Catalog</a></li>
+    <li class='nav'><a href="#">Sale</a></li>
+    <li class='nav'><a href="#">Blog</a></li>
+    <li class='nav'><a href="#">Contacts</a></li>
+    </ul>
+    </div>
+    
+    </div>
+    
+    <div class='bakelei'>
+      <p class='bake'>BAKE<span class='lei'>LEI</span></p>
+    </div>
+    
+    <div class='input_div'>
+      <div class='call'>
+        <p>ORDER ONLINE OR CALL US <a href="#">(123) 456-7890</a></p>
+      </div>
+    
+      <div class='input_icon'>
+        <div class='input_icon1'>
+          <input type="text" />
+          <span class='search'><i class="fa-solid fa-magnifying-glass"></i></span>
+          </div>
+    
+          <div class='input_icon1'>
+          <ul>
+            <li class='icon1'><i class="fa-solid fa-cart-shopping"></i><sup>0</sup></li>
+            <li class='icon1'><i class="fa-solid fa-scale-balanced"></i><sup>0</sup></li>
+            <li class='icon1 no'><i class="fa-solid fa-user"></i></li>
+          </ul>
+          </div>
+      </div>
+    </div>
+    </div>
+    </nav>
+    <section id='cup_cake_div'>
+        <div class='hide_div'>
+            <a href="#" class='home'  onclick="go_to_home()">Home </a>
+            <a href="#"><i class="fas fa-greater-than"></i></a>
+            <a href="#"  class='home' onclick="go_to_bakery()">Bakery</a>
+            <a href="#"><i class="fas fa-greater-than"></i></a>
+            <a href="#">Cupcake Chocolate</a>
+          </div>
+    
+          <div class='turtle_cake_div_cont collec_bakery_div'>
+            <div class='turtle_cake_side_div'>
+            <div class='right'><button>-20%</button></div>
+              <img class='img1' src="images/products-img13.jpg" alt="" />
+            </div>
+            <div class='turtle'>
+              <h1 class='h1'>Cupcake Chocolate</h1>
+              <div  class='rs_div'>
+              <h3>$14.99</h3>
+              <h4>$23.99</h4>
+              </div>
+              <div class='ul_li_div'>
+                <ul>
+                  <li>Brand:</li>
+                  <li>Home Sweet</li>
+                </ul>
+             
+                <ul>
+                  <li>SKU:</li>
+                  <li>00111</li>
+                </ul>
+              
+                <ul>
+                  <li>Product type:</li>
+                  <li>Chocolate</li>
+                </ul>
+    
+                <ul>
+                  <li>Vendor:</li>
+                  <li>Italy</li>
+                </ul>
+              </div>
+            <div class='quentity'>
+              <label htmlFor="">Quantity:</label><br/>
+              <input type="number" name="num" id="num" min="1" required/><br/>
+              <label htmlFor="">Available quantity :</label>
+              <p class='ten'>10</p>
+            </div>
+    
+            <div class='btn'>
+              <div><button  class='apply'>ADD TO CART</button></div>
+              <div><button class='clear'>COMPARE</button></div>
+            </div>
+    
+            <div class='foot_div_cont'>
+      <ul>
+        <li class='li'><a href=""><span><i class="fab fa-instagram"></i></span></a></li>
+        <li class='li'><a href=""><span><i class="fab fa-facebook-f"></i></span></a></li>
+        <li class='li'><a href=""><span><i class="fab fa-twitter"></i></span></a></li>
+        <li class='li'><a href=""><span><i class="fab fa-youtube-square"></i></span></a></li>
+      </ul>
+      </div>
+      </div>
+      </div>
+    
+      <div class='descip'>
+        <div><span class="descript">Description</span></div>
+        <div><span>Delivery</span></div>
+        <div><span>Reviews</span></div>
+      </div>
+    
+      <div class='wel'>
+        <h1>Welcome to one of the biggest and the sweetest sweet stores</h1>
+        <p>All the items which are in our shop, are presented at the online store. And even though being on the website doesn’t let you feel the aroma and taste the sweets yourself, it has a huge advantage. Even of you live in a different city and would like to buy the sweets which are available only at our store, we’ll gladly ship them to you!Check out our Gelatine-Free sections, Gluten-Free and Sugar-Free sections.</p>
+        <p>We launched our business back in 1998, and we grew from a local shop to a big store, which also delivers its products all over the country. All the items which are in our shop, are presented at the online store. And even though being on the website doesn’t let you feel the aroma and taste the sweets yourself, it has a huge advantage. Choose the ones you like!</p>
+        <p>We launched our business back in 1998, and we grew from a local shop to a big store, which also delivers its products all over the country. All possible kinds of sweets are here: boiled sweet classics, bubblegums, chocolate bars, fizzy sherbet, jelly and gums, lollipops. Choose the ones you like! We launched our business back in 1998, and we grew from a local shop to a big store, which also delivers its products all over the country.</p>
+        </div>
+    
+        <div class='related_div'>
+      <div class='best_seller'>
+        <h1 class='best ten'>Related Products</h1> 
+    
+      <div class='cake_div'>
+        <div class='cake_div_cont'>
+        <div class='right'><button>-40%</button></div>
+          <img  class='img1 img_height' src="images/products-img1.jpg" alt=""  />
+          <div class='cont'>
+              <p><a href="#">Basic Sponge Cake</a></p>
+              <p class='rs'><i>$24.99 </i> <del>$30.99</del></p>
+              <button onclick="Show_shopping_cart()"><i class="fa-solid fa-cart-shopping" style="margin-right: 7px;"></i>ADD TO CART</button>
+            </div>
+        </div>
+    
+        
+        <div class='cake_div_cont'>
+        <div class='right'><button>-40%</button></div>
+          <img class='img1 img_height' src="images/products-img11.jpg" alt="" />
+          <div class='cont'>
+              <p><a href="#">Basic Sponge Chocolate</a></p>
+              <p class='rs'><i>$24.99 </i> <del>$30.99</del></p>
+              <button onclick="Show_shopping_cart()"><i class="fa-solid fa-cart-shopping" style="margin-right: 7px;"></i>ADD TO CART</button>
+            </div>
+        </div>
+    
+        <div class='cake_div_cont'>
+          <div>
+            <div class='right'><button>-20%</button></div>
+            <img class='img1 img_height' src="images/products-img12.jpg" alt="" />
+          </div>
+          <div class='cont'>
+              <p><a href="#">Cupcake Chocolate</a></p>
+              <p class='rs'><i>$14.99 </i> <del>$23.99</del></p>
+              <button onclick="Show_shopping_cart()"><i class="fa-solid fa-cart-shopping" style="margin-right: 7px;"></i>ADD TO CART</button>
+            </div>
+        </div>
+    
+        <div class='cake_div_cont'>
+          <div>
+            <div class='right'><button>-30%</button></div>
+            <img class='img1 img_height' src="images/products-img15.jpg" alt="" />
+          </div>
+          <div class='cont'>
+              <p><a href="#">Turtle Cake</a></p>
+              <p class='rs'><i>$17.99 </i> <del>$29.99</del></p>
+              <button onclick="Show_shopping_cart()"><i class="fa-solid fa-cart-shopping" style="margin-right: 7px;"></i>ADD TO CART</button>
+            </div>
+        </div>
+    
+    </div>
+    
+    <div class='instagram_div padding_top'>
+        <div class='instagram'>
+          <img src="images/instagram.png"  />
+          <h1 class='h1_instra'><em>Instagram Shop</em></h1>
+        </div>
+    
+        <div class='foot_img_div'>
+          <div class='foot_img1'>
+            <img class='image' src="images/footer-img1.jpg"  />
+            <div class='center'>
+              <div class='icon_instra'><i class="fa-brands fa-instagram"></i></div>
+            </div>
+          </div>
+    
+          <div class='foot_img1'>
+            <img class='image' src="images/footer-img2.jpg"  />
+            <div class='center'>
+              <div class='icon_instra'><i class="fa-brands fa-instagram"></i></div>
+            </div>
+            </div>
+    
+          <div class='foot_img1'>
+            <img class='image' src="images/footer-img3.jpg" />
+            <div class='center'>
+              <div class='icon_instra'><i class="fa-brands fa-instagram"></i></div>
+            </div>
+            </div>
+    
+          <div class='foot_img1'>
+            <img class='image' src="images/footer-img4.jpg"  />
+            <div class='center'>
+              <div class='icon_instra'><i class="fa-brands fa-instagram"></i></div>
+            </div>
+            </div>
+    
+        </div>
+      
+    
+    
+    <div class='foot_div'>
+      <div class='foot_div_cont'>
+        <p><em>Receive news right on your email</em></p>
+        <p class='input_text'><input type="email"  placeholder="Enter your e-mail here*" required/></p>
+        <button>SUBSCRIBE</button>
+      </div>
+    
+      <div class='foot_div_cont'>
+      <p class='bake1'>BAKE<span class='lei'>LEI</span></p>
+      <ul>
+        <li class='li'><a href=""><span><i class="fab fa-instagram"></i></span></a></li>
+        <li class='li'><a href=""><span><i class="fab fa-facebook-f"></i></span></a></li>
+        <li class='li'><a href=""><span><i class="fab fa-twitter"></i></span></a></li>
+        <li class='li'><a href=""><span><i class="fab fa-youtube-square"></i></span></a></li>
+      </ul>
+      </div>
+    
+      <div class='foot_div_cont'>
+        <p><em>Contacts</em></p>
+        <div class='side'>
+        <div class='loca_call'><i class="fas fa-map-marker-alt"></i></div>
+        <div><p class='loc'>707 Randolph Street <br/>
+          Napa, CA 94559</p></div>
+        </div>
+    
+      <div class='side'>
+        <div class='loca_call'><i class="fas fa-phone"></i></div>
+        <div>
+          <p class='loc'>P: 123.456.7890</p>
+          <p class='loc'>F: 123.456.7891</p>
+    
+        </div>
+        </div>
+     
+    </div>
+    </div>
+    
+    <div class='last'><p>Copyright © 2021. All Rights Reserved.</p></div>
+    
+    </div>
+    
+      </div>
+      </div>  
+    </section>
+    
+</body>
+</html>

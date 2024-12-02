@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bakery.css">
+    <script src="bakery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/fontawesome.min.js" integrity="sha512-C8qHv0HOaf4yoA7ISuuCTrsPX8qjolYTZyoFRKNA9dFKnxgzIHnYTOJhXQIt6zwpIFzCrRzUBuVgtC4e5K1nhA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+</head>
+<body>
+    <nav class="header">
+        <div class="App1">
+            <div class='icon_nav'>
+       <div class='icon_div'>
+      <ul class='icon_ul'>
+        <li class='icon'><i class="fa-brands fa-instagram"></i></li>
+        <li class='icon'><i class="fa-brands fa-facebook-f"></i></li>
+        <li class='icon'><i class="fa-brands fa-twitter"></i></li>
+        <li class='icon'><i class="fa-brands fa-square-youtube"></i></li>
+      </ul>
+    
+    </div>
+    
+    <div id='menu'><button onclick="show_list()"><i class="fa-solid fa-bars"></i></button>
+    <div class='menu_list' id='none'>
+      <ul>
+        <li class='pink_home' onclick="go_to_home()">Home</li>
+        <li>Collection</li>
+        <li>Catalog</li>
+        <li>Sale</li>
+        <li>Blog</li>
+        <li>Contacts</li>
+      </ul>
+    </div>
+    </div>
+    
+    
+    <div class='nav_div' id='navigation'>
+     
+    <ul class='nav_ul'>
+    <li class='nav active'onclick="go_to_home()"><a href="#">Home</a></li>
+    <li class='nav'><a href="#">Collection</a></li>
+    <li class='nav dropdown'><a href="#">Catalog</a>
+    <!-- <div clas='drop_cont'>
+    <ul>
+     <li class='active'><a href="#">Bakery</a></li>
+     <li><a href="#">Caramels</a></li>
+     <li><a href="#">Chocolate</a></li>
+     <li><a href="#">Ice-Cream</a></li>
+     <li><a href="#">Cookies</a></li>
+     <li><a href="#">Sale</a></li>
+    </ul>
+    </div> -->
+    </li>
+    <li class='nav'><a href="#">Sale</a></li>
+    <li class='nav'><a href="#">Blog</a></li>
+    <li class='nav'><a href="#">Contacts</a></li>
+    </ul>
+    </div>
+    
+    </div>
+    
+    <div class='bakelei'>
+      <p class='bake'>BAKE<span class='lei'>LEI</span></p>
+    </div>
+    
+    <div class='input_div'>
+      <div class='call'>
+        <p>ORDER ONLINE OR CALL US <a href="#">(123) 456-7890</a></p>
+      </div>
+    
+      <div class='input_icon'>
+        <div class='input_icon1'>
+          <input type="text" />
+          <span class='search'><i class="fa-solid fa-magnifying-glass"></i></span>
+          </div>
+    
+          <div class='input_icon1'>
+          <ul>
+            <li class='icon1'><i class="fa-solid fa-cart-shopping"></i><sup>0</sup></li>
+            <li class='icon1'><i class="fa-solid fa-scale-balanced"></i><sup>0</sup></li>
+            <li class='icon1 no'><i class="fa-solid fa-user"></i></li>
+          </ul>
+          </div>
+      </div>
+    </div>
+    </div>
+    </nav>
+    
+    <section id='pumpkin'>
+        <div class='hide_div'>
+          <a href="file:///D:/krishna/cake/bakery.html" class='home'  onclick="Show_home()">Home </a>
+          <a href="#"><i class="fas fa-greater-than"></i></a>
+          <a href="#" onclick="Show_bakery()">Blog Main Page</a>
+        
+        </div>
+  
+        <div class='collec_bakery_div'>
+          <div class='first_div'>
+  
+            <div class='border'>
+            <h1 class='coll'>Categories</h1>
+                  </div>
+  
+            <ul class='car_ul'>
+             <li><a href="#">Candy & Chocolate</a></li>
+             <li><a href="#">Fruit & Nut Gifts</a></li>
+             <li><a href="#">Gift Ideas</a></li>
+             <li><a href="#">Space Dust and Sherbet</a></li>
+             <li><a href="#">Vegan Candy</a></li>
+           </ul>
+  
+          <div class='border'>
+            <div><h1 clclassassName='coll'>Blog Tags</h1></div>
+            </div>
+            <div class='border'>
+            
+           <div class='tag'>
+            <a href="#">Cake</a>
+            <a href="#">Cook</a>
+            <a href="#">Jelly</a>
+           </div>
+  
+          <div class='recent_post'>
+            <div class='post'>
+              <p class='coll'>Recent Posts</p>
+               <p><img class='img1' src="images/blog-img4.jpg" alt="" /></p>
+               <p class='salt'>Salted Caramel Pear Cake</p>
+               <p class='pink'>22.10.2021</p>
+               <!-- <p class='pink'><i class="fas fa-calendar" class="icon">22.10.2021</p> -->
+              </div>
+  
+              <div class='post'>
+               <p><img class='img1' src="images/blog-img5.jpg" alt="" /></p>
+               <p class='salt'>Baileys Pumpkin Spice Cupcakes</p>
+               <p class='pink'>22.10.2021</p>
+               <!-- <p class='pink'><i class="fas fa-calendar" class="icon">22.10.2021</p> -->
+              </div>
+        
+          </div>
+          </div>
+  
+          </div>
+  
+        <div class='sec_div'>
+          <div class='padding3'>
+            <h1 class='h1'>Baileys Pumpkin Spice Cupcakes</h1>
+          <p>Search of staff is not an easy task. According to the departmental heads' of personnel management words, in order to find a personnel who will correspond to the relevant customer needs and requirements, it is necessary to carry out a great job.</p>
+        </div>
+  
+          <div class='padding3'>
+            <img class='img1'  src="images/blog-img5.jpg" alt="" />
+  
+            <p>For search and selection of necessary staff, a variety of means from the arsenal of psychological science is used : biographical questionnaires, standardized and non-standartized interviews, jobs, modelling work and situational exercises, tests on achievement, personality, intelligence and abilities, polygraphic examinations and much more.</p>
+            <p>For search and selection of necessary staff, a variety of means from the arsenal of psychological science is used : biographical questionnaires, standardized and non-standartized interviews, jobs, modelling work and situational exercises, tests on achievement, personality, intelligence and abilities, polygraphic examinations and much more.</p>
+            <p>There are some psychological techniques borrowed from abroad and their adaptation in the vast majority of cases has been reduced to minimum. As a result, practices that still somehow can be used in search and selection of personnel do not meet basic requirements of psychrometric.</p>
+          </div>
+  
+          <div class='padding3'>
+            <img class='img1'  src="images/blog-img7.jpg" alt="" />
+  
+            <p>The second major obstacle to the use of modern psychological diagnostics in practice of professional selection is the low level of psychological training of managers of contracting authorities and, alas the candidates who wish to obtain working space without making much effort. So professional psychologists are not enough to manage a professional psychological selection of personnel and solving other problems at the company related to the estimation of the personnel. Also well-established psychological assessment tools that meet all necessary requirements are required.</p>
+  
+         
+  
+          </div>
+          <div class='padding3'> <img class='img1' src="images/disqus.png" alt="" /></div>
+  
+        </div>
+  
+  
+        </div>
+  
+      <div class='instagram'>
+        <img src="images/instagram.png"  />
+        <h1 class='h1_instra'><em>Instagram Shop</em></h1>
+      </div>
+  
+      <div class='foot_img_div'>
+        <div class='foot_img1'>
+          <img class='image' src="images/footer-img1.jpg" />
+          <div class='center'>
+            <div class='icon_instra'><i class="fab fa-instagram"></i></div>
+          </div>
+        </div>
+  
+        <div class='foot_img1'>
+          <img class='image' src="images/footer-img2.jpg"  />
+          <div class='center'>
+            <div class='icon_instra'><i class="fab fa-instagram"></i></div>
+          </div>
+          </div>
+  
+        <div class='foot_img1'>
+          <img class='image' src="images/footer-img3.jpg"  />
+          <div class='center'>
+            <div class='icon_instra'><i class="fab fa-instagram"></i></div>
+          </div>
+          </div>
+  
+        <div class='foot_img1'>
+          <img class='image' src="images/footer-img4.jpg"  />
+          <div class='center'>
+            <div class='icon_instra'><i class="fab fa-instagram"></i></div>
+          </div>
+          </div>
+  
+          
+      </div>
+    
+  
+  
+  <div class='foot_div'>
+    <div class='foot_div_cont'>
+      <p><em>Receive news right on your email</em></p>
+      <p class='input_text'><input type="email"  placeholder="Enter your e-mail here*" required/></p>
+      <button>SUBSCRIBE</button>
+    </div>
+  
+    <div class='foot_div_cont'>
+    <p class='bake1'>BAKE<span class='lei'>LEI</span></p>
+    <ul>
+      <li class='li'><a href=""><span><i class="fab fa-instagram"></i></span></a></li>
+      <li class='li'><a href=""><span><i class="fab fa-facebook-f"></i></span></a></li>
+      <li class='li'><a href=""><span><i class="fab fa-twitter"></i></span></a></li>
+      <li class='li'><a href=""><span><i class="fab fa-youtube-square"></i></span></a></li>
+    </ul>
+    </div>
+  
+    <div class='foot_div_cont'>
+      <p><em>Contacts</em></p>
+      <div class='side'>
+      <div class='loca_call'><i class="fas fa-map-marker-alt"></i></div>
+      <div><p class='loc'>707 Randolph Street <br/>
+        Napa, CA 94559</p></div>
+      </div>
+  
+    <div class='side'>
+      <div class='loca_call'><i class="fas fa-phone"></i></div>
+      <div>
+        <p class='loc'>P: 123.456.7890</p>
+        <p class='loc'>F: 123.456.7891</p>
+  
+      </div>
+      </div>
+   
+  </div>
+  
+  <div class='last'><p>Copyright © 2021. All Rights Reserved.</p></div>
+  
+  </div>
+  </section>
+  
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bakery.css">
+    <script src="bakery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/fontawesome.min.js" integrity="sha512-C8qHv0HOaf4yoA7ISuuCTrsPX8qjolYTZyoFRKNA9dFKnxgzIHnYTOJhXQIt6zwpIFzCrRzUBuVgtC4e5K1nhA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+
+   
+</head>
+<body>
+   <nav class="header">
+       <div class="App1">
+           <div class='icon_nav'>
+      <div class='icon_div'>
+     <ul class='icon_ul'>
+       <li class='icon'><i class="fa-brands fa-instagram"></i></li>
+       <li class='icon'><i class="fa-brands fa-facebook-f"></i></li>
+       <li class='icon'><i class="fa-brands fa-twitter"></i></li>
+       <li class='icon'><i class="fa-brands fa-square-youtube"></i></li>
+     </ul>
+   
+   </div>
+   
+   <div id='menu'><button onclick="show_list()"><i class="fa-solid fa-bars"></i></button>
+   <div class='menu_list' id='none'>
+     <ul>
+       <li class='pink_home' onclick="go_to_home()">Home</li>
+       <li>Collection</li>
+       <li>Catalog</li>
+       <li>Sale</li>
+       <li>Blog</li>
+       <li>Contacts</li>
+     </ul>
+   </div>
+   </div>
+   
+   
+   <div class='nav_div' id='navigation'>
+    
+   <ul class='nav_ul'>
+   <li class='nav active' onclick="go_to_home()"><a href="#">Home</a></li>
+   <li class='nav'><a href="#">Collection</a></li>
+   <li class='nav dropdown'><a href="#">Catalog</a></li>
+   <li class='nav'><a href="#">Sale</a></li>
+   <li class='nav'><a href="#">Blog</a></li>
+   <li class='nav'><a href="#">Contacts</a></li>
+   </ul>
+   </div>
+   
+   </div>
+   
+   <div class='bakelei'>
+     <p class='bake'>BAKE<span class='lei'>LEI</span></p>
+   </div>
+   
+   <div class='input_div'>
+     <div class='call'>
+       <p>ORDER ONLINE OR CALL US <a href="#">(123) 456-7890</a></p>
+     </div>
+   
+     <div class='input_icon'>
+       <div class='input_icon1'>
+         <input type="text" />
+         <span class='search'><i class="fa-solid fa-magnifying-glass"></i></span>
+         </div>
+   
+         <div class='input_icon1'>
+         <ul>
+           <li class='icon1'><i class="fa-solid fa-cart-shopping"></i><sup>0</sup></li>
+           <li class='icon1'><i class="fa-solid fa-scale-balanced"></i><sup>0</sup></li>
+           <li class='icon1 no'><i class="fa-solid fa-user"></i></li>
+         </ul>
+         </div>
+     </div>
+   </div>
+   </div>
+   </nav>
+
+    <section id='shopping_cake_div'>
+        <div class='hide_div'>
+            <a href="#" class='home'  onclick="go_to_home()">Home </a>
+            <a href="#"><i class="fas fa-greater-than"></i></a>
+        
+            <a href="#">Shopping Cart</a>
+          </div>
+    
+          <div class='shoping_div'>
+            <div>
+            <h1 class='new'>Shopping Cart</h1>
+            <h2>Cart is empty</h2>
+            <p><button onclick="go_to_bakery()">continue shopping</button></p>
+          </div>
+          </div>
+
+          
+      
+          <div class='foot_div'>
+      <div class='foot_div_cont'>
+        <p><em>Receive news right on your email</em></p>
+        <p class='input_text'><input type="email"  placeholder="Enter your e-mail here*" required/></p>
+        <button>SUBSCRIBE</button>
+      </div>
+    
+      <div class='foot_div_cont'>
+      <p class='bake1'>BAKE<span class='lei'>LEI</span></p>
+      <ul>
+        <li class='li'><a href=""><span><i class="fab fa-instagram"></i></span></a></li>
+        <li class='li'><a href=""><span><i class="fab fa-facebook-f"></i></span></a></li>
+        <li class='li'><a href=""><span><i class="fab fa-twitter"></i></span></a></li>
+        <li class='li'><a href=""><span><i class="fab fa-youtube-square"></i></span></a></li>
+      </ul>
+      </div>
+    
+    <div class='foot_div_cont'>
+      <p><em>Contact</em></p>
+      <div class='side'>
+        <div class='loca_call'><i class="fas fa-map-marker-alt"></i></div>
+        <div><p class='loc'>707 Randolph Street <br/>
+          Napa, CA 94559</p></div>
+        </div>
+        <div class='side'>
+        <div class='loca_call'><i class="fas fa-phone"></i></div>
+        <div>
+          <p class='loc'>P: 123.456.7890</p>
+          <p class='loc'>F: 123.456.7891</p>
+    
+        </div>
+        </div>
+    
+    </div>
+    
+    
+      </div>
+      <div class='last'><p>Copyright © 2021. All Rights Reserved.</p></div>
+    
+          
+          </section>
+    
+</body>
+</html>

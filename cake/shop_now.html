@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bakery.css">
+    <script src="bakery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/fontawesome.min.js" integrity="sha512-C8qHv0HOaf4yoA7ISuuCTrsPX8qjolYTZyoFRKNA9dFKnxgzIHnYTOJhXQIt6zwpIFzCrRzUBuVgtC4e5K1nhA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+</head>
+<body>
+    <nav class="header">
+        <div class="App1">
+            <div class='icon_nav'>
+       <div class='icon_div'>
+      <ul class='icon_ul'>
+        <li class='icon'><i class="fa-brands fa-instagram"></i></li>
+        <li class='icon'><i class="fa-brands fa-facebook-f"></i></li>
+        <li class='icon'><i class="fa-brands fa-twitter"></i></li>
+        <li class='icon'><i class="fa-brands fa-square-youtube"></i></li>
+      </ul>
+    
+    </div>
+    
+    <div id='menu'><button onclick="show_list()"><i class="fa-solid fa-bars"></i></button>
+    <div class='menu_list' id='none'>
+      <ul>
+        <li class='pink_home' onclick="go_to_home()">Home</li>
+        <li>Collection</li>
+        <li>Catalog</li>
+        <li>Sale</li>
+        <li>Blog</li>
+        <li>Contacts</li>
+      </ul>
+    </div>
+    </div>
+    
+    
+    <div class='nav_div' id='navigation'>
+     
+    <ul class='nav_ul'>
+    <li class='nav active' onclick="go_to_home()"><a href="#">Home</a></li>
+    <li class='nav'><a href="#">Collection</a></li>
+    <li class='nav dropdown'><a href="#">Catalog</a></li>
+    <li class='nav'><a href="#">Sale</a></li>
+    <li class='nav'><a href="#">Blog</a></li>
+    <li class='nav'><a href="#">Contacts</a></li>
+    </ul>
+    </div>
+    
+    </div>
+    
+    <div class='bakelei'>
+      <p class='bake'>BAKE<span class='lei'>LEI</span></p>
+    </div>
+    
+    <div class='input_div'>
+      <div class='call'>
+        <p>ORDER ONLINE OR CALL US <a href="#">(123) 456-7890</a></p>
+      </div>
+    
+      <div class='input_icon'>
+        <div class='input_icon1'>
+          <input type="text" />
+          <span class='search'><i class="fa-solid fa-magnifying-glass"></i></span>
+          </div>
+    
+          <div class='input_icon1'>
+          <ul>
+            <li class='icon1'><i class="fa-solid fa-cart-shopping"></i><sup id="count">0</sup></li>
+            <li class='icon1'><i class="fa-solid fa-scale-balanced"></i><sup>0</sup></li>
+            <li class='icon1 no'><i class="fa-solid fa-user"></i></li>
+          </ul>
+          </div>
+      </div>
+    </div>
+    </div>
+    </nav>
+    
+    <section id='bakery'>
+        <div class='hide_div'>
+          <a href="#" class='home'  onclick="go_to_home()">Home </a>
+          <a href="#"><i class="fas fa-greater-than"></i></a>
+          <a href="#" onclick="Show_bakery()">Bakery</a>
+        </div>
+  
+        <div class='collec_bakery_div'>
+          <div class='first_div'>
+  
+            <div class='border'>
+            <h1 class='coll'>Collection</h1>
+                  </div>
+  
+            <ul class='car_ul'>
+             <li class='open'><a href="#">Bakery</a></li>
+             <li><a href="#">Caramels</a></li>
+             <li><a href="#">Chocolate</a></li>
+             <li><a href="#">Ice-Cream</a></li>
+             <li><a href="#">Cookies</a></li>
+             <li><a href="#">Sale</a></li>
+           </ul>
+  
+          <div class='border'>
+            <div><h1 class='coll'>Filter By</h1></div>
+            </div>
+            <div class='border'>
+              <div>Price</div>
+              <div class='price'>
+              <div class='num'><input type="number" name="min" id="min" placeholder='min'/></div>
+              <div class='num'>-</div>
+              <div class='num'><input type="number" name="mix" id="mix" placeholder='max'/></div>
+              </div>
+          
+  
+          <div class='border'>
+            <div class='brand'>
+              <p>Brands</p>
+              <p id='down_arrow1' onclick="Show_label1()"><i class="fas fa-angle-down"></i></p>
+              <p id='up_arrow1'onclick="Show_label1()"><i class="fas fa-angle-up"></i></p>
+              </div>
+           <div id='label1'>
+            <input type="checkbox" name="" id="check" />
+              <label htmlFor="">Home Sweet</label><br/>
+              <input type="checkbox" name="" id="check" />
+              <label htmlFor="">Godiva</label>
+            </div>
+          </div>
+          
+  
+          <div class='border'>
+              <div class='brand'>
+              <p>Product type</p>
+              <p id='down_arrow2' onclick="Show_label2()"><i class="fas fa-angle-down"></i></p>
+              <p  id='up_arrow2' onclick="Show_label2()"><i class="fas fa-angle-up"></i></p>
+              </div>
+                <div id='label2'>
+              <input type="checkbox" name="" id="check" />
+              <label htmlFor="">Candy</label><br/>
+              <input type="checkbox" name="" id="check" />
+              <label htmlFor="">Chocolate</label><br/>
+              <input type="checkbox" name="" id="check" />
+              <label htmlFor="">Nut Gifts</label><br/>
+              <input type="checkbox" name="" id="check" />
+              <label htmlFor="">Gift Ideas</label> <br/>
+              <input type="checkbox" name="" id="check" />
+              <label htmlFor="">Space Dust</label><br/>
+              <input type="checkbox" name="" id="check" />
+              <label htmlFor="">Vegan Candy</label>
+            </div>
+          </div>
+           
+  
+            <div class='border'>
+              <div class='brand'>
+              <p>Vendor</p>
+              <p id='down_arrow3' onclick="Show_label3()"><i class="fas fa-angle-down"></i></p>
+              <p id='up_arrow3' onclick="Show_label3()"><i class="fas fa-angle-up"></i></p>
+              </div>
+            <div  id='label3'>
+            <input type="checkbox" name="" id="check" />
+              <label htmlFor="">France</label><br/>
+              <input type="checkbox" name="" id="check" />
+              <label htmlFor="">USA</label><br/>
+              <input type="checkbox" name="" id="check" />
+              <label htmlFor="">Italy</label><br/>
+              <input type="checkbox" name="" id="check" />
+              <label htmlFor="">Germany</label><br/>
+              <input type="checkbox" name="" id="check" />
+              <label htmlFor="">Ukraine</label>
+            </div>
+            </div>
+            
+            <div class='btn'>
+            <div>
+              <button class='apply'>APPLY</button>
+            </div>
+            <div>
+              <button class='clear'>CLEAR</button>
+            </div>
+          </div>
+  
+          </div>
+  
+          </div>
+  
+        <div class='sec_div'>
+          <div class='padding'>
+            <h1 class='h1'>Bakery</h1>
+          <p>We can offer you a great variety of frosted cakes as well. Soft, melt in the mouth cake, oozing with buttery whipped icing. A truly delicious and indulgent treat that would make a perfect delivered gift or party centerpiece.</p>
+          <p>We also offer highly acclaimed French-style macarons, as well as an exquisite collection of crafted chocolate candies, cookies, and...</p>
+        </div>
+  
+        <div class='select_div'>
+          <div class='show_sort'>
+            <label htmlFor="">Show </label>
+            <select name="op" id="op">
+              <option value="9">9</option>
+              <option value="36">36</option>
+              <option value="81">81</option>
+            </select>
+          </div>
+  
+          <div  class='show_sort'>
+            <label htmlFor="">Sort by </label>
+            <select name="select" id="select" >
+            <option value="">Oldest First</option>
+              <option value="" selected>Newest First</option>
+              <option value="">Price: Low to High</option>
+              <option value="">Price: High to Low</option>
+              <option value="">Name:A-Z</option>
+              <option value="">Name:Z-A</option>
+            </select>
+          </div>
+        </div>
+  
+ 
+
+ 
+    <div id="root" class="root1"></div>
+
+
+    <h1 id="cartitem"></h1>
+
+    <div class="total_div"><h1 id="total"></h1></div>
+
+<script>
+ const product = [
+ {
+         id:0,
+         image:"images/products-img1.jpg",
+         title:"Basic Sponge Cake",
+         price:24,
+         face_prise:"$30.99",
+         less_per:-40
+     },
+     {
+         id:1,
+         image:"images/products-img11.jpg",
+         title:"Carrot Cake",
+         price:17,
+         face_prise:"$30.99",
+         less_per:-30
+     },
+     {
+       id:2,
+       image:"images/products-img12.jpg",
+       title:"Basic Sponge Chocolate",
+       price:24,
+       face_prise:"$30.99",
+       less_per:-40
+   },
+     {
+         id:3,
+         image:"images/products-img13.jpg",
+         title:"Cupcake Chocolate",
+         price:14,
+         face_prise:"$30.99",
+         less_per:-20
+     },
+     {
+         id:4,
+         image:"images/products-img15.jpg",
+         title:"Turtle Cake",
+         price:24,
+         face_prise:"$30.99",
+         less_per:-30
+     },
+     {
+         id:5,
+         image:"images/products-img16.jpg",
+         title:"Honey Cake",
+         price:24,
+         less_per:-30
+     },
+     {
+         id:6,
+         image:"images/products-img26.jpg",
+         title:"Nute Cake",
+         price:24,
+         less_per:"Top"
+     },
+     {
+         id:7,
+         image:"images/products-img24.jpg",
+         title:"Sponge Cake",
+         price:24,
+         face_prise:"$30.99",
+         less_per:-40
+     },
+     {
+         id:8,
+         image:"images/products-img25.jpg",
+         title:"Chocolate Cake",
+         price:24,
+         less_per:-20
+     },
+    
+ ];
+ 
+ const categories = [...new Set(product.map((item) => {
+     return item;
+ }))]
+ let i = 0;
+ document.getElementById("root").innerHTML = categories.map((item) => {
+     var {image, title, price,face_prise,less_per} = item;
+     return(
+         `
+         <div class='box' >
+          <div class='right'><button class='btn1'>${less_per}</button></div>
+         <div class='img-box'>
+         <img class='img1 img_height'' src=${image}></img>
+         </div>
+         <div class='cont'>
+         <p><a href="#">${title}</a><p/>
+         <h2 class="rs"><i>$ ${price}</i> <del> ${face_prise}</del></h2>
+         ` +
+         "<button onclick='addtocart("+(i++)+")'> <i class='fa-solid fa-cart-shopping' style='margin-right: 7px;'></i>ADD TO CART</button>" +
+         // "<button onclick='addtocart("+(i++)+")'>Add to Cart</button>" +
+         `
+     
+         </div>
+         </div>
+         `
+         
+     )
+ })
+ 
+ .join('');
+ 
+ 
+ var cart = [];
+ 
+ function addtocart(a){
+     cart.push({...categories[a]});
+     displaycart();
+ }
+ 
+ function delElement(a){
+     cart.splice(a, 1);
+     displaycart();
+ }
+ 
+ function displaycart(){
+     let j = 0, total=0;
+     document.getElementById("count").innerHTML = cart.length;
+     if(cart.length == 0){
+         document.getElementById("cartitem").innerHTML = "Your Cart is empty";
+         document.getElementById("total").innerHTML = "Total: " +0+ " .00";
+         
+     }
+     else{
+         document.getElementById("cartitem").innerHTML = cart.map((items) => {
+             var{image, title, price} = items;
+             total=total+price;
+             document.getElementById("total").innerHTML = "Total: " +total+" .00";
+             return(
+                 `
+                 <div class='cart_item'>
+                     <div class='row_img'>
+                         <img class='rowimg' src=${image}>
+                         </div>
+                         <h5>${title}</h5>
+                         <p>$ ${price}.00</p>`+
+                         "<i class='fa-solid fa-trash delete' onclick='delElement(" +(j++)+ ")'></i></div>"
+                     
+             )
+         }).join('');
+     }
+ }
+  </script>
+
+  
+  <div class='select_div'>
+          <div class='show_sort'>
+            <label htmlFor="">Show </label>
+            <select name="op" id="op">
+              <option value="9">9</option>
+              <option value="36">36</option>
+              <option value="81">81</option>
+            </select>
+          </div>
+  
+          <div  class='show_sort'>
+            <label htmlFor="">Sort by </label>
+            <select name="select" id="select" >
+            <option value="">Oldest First</option>
+              <option value="" selected>Newest First</option>
+              <option value="">Price: Low to High</option>
+              <option value="">Price: High to Low</option>
+              <option value="">Name:A-Z</option>
+              <option value="">Name:Z-A</option>
+            </select>
+          </div>
+        </div>
+  
+        </div>
+  
+        </div>
+  
+    <div class='instagram_div'>
+      <div class='instagram'>
+        <img src="images/instagram.png"  />
+        <h1 class='h1_instra'><em>Instagram Shop</em></h1>
+      </div>
+  
+      <div class='foot_img_div'>
+        <div class='foot_img1'>
+          <img class='image' src="images/footer-img1.jpg"  />
+          <div class='center'>
+            <div class='icon_instra'><i class="fa-brands fa-instagram"></i></div>
+          </div>
+        </div>
+  
+        <div class='foot_img1'>
+          <img class='image' src="images/footer-img2.jpg"  />
+          <div class='center'>
+            <div class='icon_instra'><i class="fa-brands fa-instagram"></i></div>
+          </div>
+          </div>
+  
+        <div class='foot_img1'>
+          <img class='image' src="images/footer-img3.jpg"  />
+          <div class='center'>
+            <div class='icon_instra'><i class="fa-brands fa-instagram"></i></div>
+          </div>
+          </div>
+  
+        <div class='foot_img1'>
+          <img class='image' src="images/footer-img4.jpg"  />
+          <div class='center'>
+            <div class='icon_instra'><i class="fa-brands fa-instagram"></i></div>
+          </div>
+          </div>
+  
+      </div>
+    
+  
+  
+  <div class='foot_div'>
+    <div class='foot_div_cont'>
+      <p><em>Receive news right on your email</em></p>
+      <p class='input_text'><input type="email"  placeholder="Enter your e-mail here*" required/></p>
+      <button>SUBSCRIBE</button>
+    </div>
+  
+    <div class='foot_div_cont'>
+    <p class='bake1'>BAKE<span class='lei'>LEI</span></p>
+    <ul>
+      <li class='li'><a href=""><span><i class="fa-brands fa-instagram"></i></span></a></li>
+      <li class='li'><a href=""><span><i class="fa-brands fa-facebook-f"></i></span></a></li>
+      <li class='li'><a href=""><span><i class="fa-brands fa-twitter"></i></span></a></li>
+      <li class='li'><a href=""><span><i class="fa-brands fa-square-youtube"></i></span></a></li>
+    </ul>
+    </div>
+  
+    <div class='foot_div_cont'>
+      <p><em>Contacts</em></p>
+      <div class='side'>
+      <div class='loca_call'><i class="fa-solid fa-location-dot"></i></div>
+      <div><p class='loc'>707 Randolph Street <br/>
+        Napa, CA 94559</p></div>
+      </div>
+  
+    <div class='side'>
+      <div class='loca_call'><i class="fas fa-phone"></i></div>
+      <div>
+        <p class='loc'>P: 123.456.7890</p>
+        <p class='loc'>F: 123.456.7891</p>
+  
+      </div>
+      </div>
+   
+  </div>
+  </div>
+  
+  <div class='last'><p>Copyright © 2021. All Rights Reserved.</p></div>
+  
+  </div>
+  </section>
+  
+</body>
+</html>
